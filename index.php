@@ -18,7 +18,7 @@ class IndexController extends Controller
     {
 
         $user = User::find(1);
-        $amount = 1000; // 假设是增加1000的余额
+        $amount = 1000; // 假设是增加1000的余额,
         UpdateUserBalance::dispatch($user, $amount);
     }
 
